@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Greedy Duck Menu</title>
+    <link href="Greedy Duck.css" rel="stylesheet" type="text/css">
+    <script src="Greedy Duck.js"></script>
+</head>
+<body>
+    <h1>Greedy Duck 武味鸭</h1>
+  
+    <div class="maindish">
+        <div class="noodle" >
+            <ul >
+                
+
+                <li class="hotdrynoodle">
+                <h2>Signiture招牌主食:</h2>
+                <h3 id="hdn"><strong>Hot Dry Noodle 热干面</h3>
+                
+                <ul>
+                    <br/>
+                    <caption>Level of spicy辣度:</caption>
+                        <li>
+                            <input id="nspicy" type="checkbox">No Spicy无辣</input>
+                            <input id="mild" type="checkbox">Mild正常辣</input>
+                            <input id="extraspicy" type="checkbox">Extra spicy超辣</input>
+                        </li>
+                        <br/>
+                        <caption>Preference偏好：</caption>
+                        <li>
+                            <input id="greenonion" type="checkbox">No Green onion无葱</input>
+                            <input id="coriander" type="checkbox">No Coriander无香菜</input>
+                            
+                        </li>
+                    <br/>
+                    <caption>Protein(1 of 4):</caption>
+                    <li>  <input type="checkbox" id="nop" value="0">No protein武汉热干面</input></li>
+                    
+                    <li> <input type="checkbox" id="slice" value="2">Slice Beef牛肉</input></li>
+
+                    <li> <input type="checkbox" id="bb" value="2">Beef brisket牛腩</input> </li>
+                   
+                    <li> <input type="checkbox" id="pi" value="3">Pork Intestine肥肠</input></li>
+                    <button><input type="checkbox" id="enter"  onclick="hotdrynoodle(this.value)">Enter</button>
+                </ul>
+                    
+                </li>
+
+                <br/>
+
+                <li class="specialnoodlesoup">
+                        <h3 id="spn"><strong>Special Noodle Soup 秘制汤面</strong></h3>
+                        <ul>
+                            <br/>
+                                <caption>Type of Noodl面条类型</caption>
+                                <li>
+                                    <input id="rn" type="checkbox">Regular noodle普通面</input>
+                                    <input id="rice" type="checkbox">Rice noodle米粉</input>
+                                </li>
+                            
+                            
+                                <br/>
+                                <caption>Level of spicy:</caption>
+                                <li>
+                                    <input id="snspicy" type="checkbox">No Spicy无辣</input>
+                                    <input id="smild" type="checkbox">Mild正常辣</input>
+                                    <input id="sextraspicy" type="checkbox">Extra spicy超辣</input>
+                                </li>
+                                <br/>
+                                <caption>Preference偏好：</caption>
+                                <li>
+                                    <input id="sgreenonion" type="checkbox">No Green onion无葱</input>
+                                    <input id="scoriander" type="checkbox">No Coriander无香菜</input>
+                                    
+                                </li>
+                            <br/>
+                            <caption>Protein(1 of 3):</caption>
+                                <li> <input type="checkbox" id="slices" value="10.99">Slice Beef牛肉</input></li>
+             
+                                <li> <input type="checkbox" id="bbs" value="10.99">Beef brisket牛腩</input> </li>
+                                
+                                <li> <input type="checkbox" id="pis" value="10.99">Pork Intestine肥肠</input></li>
+                                <button onclick="noodlesoup(this.value)" ><input type="checkbox" id="enter2">Enter</button>
+                        </ul>
+                        
+                </li>
+
+                
+            
+            
+            
+            </ul>
+        </div>
+        
+    </div>
+    <div class="ordered">
+        <p id="rg">主食：</p> 
+        
+
+        <p id="tm">主食：</p>        
+    </div>
+</body>
+</html>

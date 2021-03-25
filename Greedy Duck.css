@@ -1,0 +1,44 @@
+h1{
+    text-align:center;
+}
+.version{
+    border:solid darkred 5px;
+}
+#chinese{
+    float: left;
+}
+#english{
+    border-style:none none none solid;
+    text-align: right;
+}
+ul{
+    list-style-type: none;
+}
+li.hotdrynoodle{
+    border: darkred 5px;
+    border-style: none none none none;
+    widows: 50%;
+    
+}
+li.specialnoodlesoup{
+    
+    border:darkred 5px;
+    border-style: none none none none;
+    widows: 50%;
+    margin: 0%;
+    padding: 0%;
+}
+div.noodle{
+    border:solid darkred 5px;
+    overflow: hidden;
+    width: 500px;
+}
+div.ordered{
+    border-style: none none none none;
+    border: darkred 5px;
+   
+}
+div.maindish{
+    border-style: none none none none;
+    float: right;
+}
